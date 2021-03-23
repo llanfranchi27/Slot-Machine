@@ -1,0 +1,41 @@
+.img{
+    max-width: 100%;
+    vertical-align: top;
+    width: 200px;
+    height: 200px;
+
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#main-header{
+    display:flex;
+    align-items: center;
+
+}
+
+#credits {
+    color:orange;
+    font-size: 1.5em;
+    list-style: 70px;
+
+}
+
+#value {
+    font-size: 5em;
+    line-height: 70px;
+
+
+}
+
+#currency {
+    font-size: 1.4em;
+
+}
+
+#spin{
+    width: 180px;
+    height: 180px;
+}
+
