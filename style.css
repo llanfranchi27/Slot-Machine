@@ -4,19 +4,26 @@ img{
     vertical-align: top;
 }
 body{
+    background-image: url('imgs/casinofloor.jpeg');
+
+    width: 600px;
     margin: auto;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+
+
 #main-content {
     display:flex;
     align-items: center;
-    margin: 10px 0 0 19px;
+    margin: 10px 0 0 19px; 
+
 }
 
 #credits{
 color: orange;
 font-size:1.5em;
+
 }
 
 #total-credits{
@@ -29,6 +36,13 @@ font-size:1.5em;
 #dollar{
 font-size:1.4em;
 
+}
+
+#title{
+    text-align: center;
+    align-items: center;
+    font-size: 50px;
+    color: blue;
 }
 
 #spin {
@@ -48,7 +62,7 @@ font-size:1.4em;
     right: 0;
     left: 0;
     margin:auto;
-    top: 30px;
+    top: 370px;
 
 }
 
@@ -101,4 +115,44 @@ header{
 
 #coins {
     margin: 10px 0 0 19px;
+}
+
+#prompt{
+    background-color: rgba(255,255,255,0.6);
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+#close-icon{
+    width: 30px;
+    top: 5px;
+    right: 5px;
+    position: absolute;
+}
+
+#message-prompt{
+    border: 5px solid crimson;
+    width: 500px;
+    border-radius: 12px;
+    position: relative;
+    height: 100px;
+    background-color: white;
+}
+
+#message {
+    font-size: 1.6em;
+    color: crimson;
+    text-align: center;
+   
+}
+
+#message img {
+    width: 30px;
 }
