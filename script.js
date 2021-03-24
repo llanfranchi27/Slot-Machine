@@ -15,7 +15,6 @@ function init(){
 }
 
 function initSpin() {
-    currentValues=[];
 for (let i=0; i<3; i++){
     currentValues.push(chooseNums());
 
