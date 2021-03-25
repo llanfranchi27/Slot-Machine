@@ -1,63 +1,52 @@
-window.onload=init;
+// Variables
 
-let credit; 
+const images = [
+  "imgs/1.png",
+  "imgs/2.png",
+  "imgs/python-icon.png",
+  "imgs/ruby-icon.png",
+  "imgs/coin2.png",
+];
+// console.log(images);
+const currentImages = [];
 
-const images=["java-icon.png", "jquery-icon.png", "js-icon.png", "php-icon.png", "python-icon.png", "ruby-icon.png", "coin2.png"];
+// Element references
 
-const imageValue=[3,2,3,2,2,3,6];
+const spinButton = document.getElementById("spin");
+const leftImage = document.getElementById("left-image");
+const middleImage = document.getElementById("middle-image");
+const rightImage = document.getElementById("right-image");
+const messageId = document.getElementById("show-result");
 
-let currentValues=[];
+//Event listeners
 
-function init(){
-    document.getElementById("spin").onclick=initSpin;
- 
+spinButton.addEventListener("click", spin);
+
+// Functions
+
+function getRandomImg() {
+  let randomIdx = Math.floor(Math.random() * images.length);
+  // console.log(randomIdx);
+  return images[randomIdx];
+}
+
+function spin() {
+
+  leftImage.src = getRandomImg();
+  middleImage.src = getRandomImg();
+  rightImage.src = getRandomImg();
+  compareImage();
+}
+
+function compareImage() {
+  //Compare images if they're equal or different
+  messageId.textContent = "";
+  if (leftImage.src === middleImage.src && middleImage.src === rightImage.src){
+      messageId.textContent = "You have won!";
+  } else {
+    messageId.textContent = "You have lost!";
+  }
 
 }
 
-function initSpin() {
-for (let i=0; i<3; i++){
-    currentValues.push(chooseNums());
 
-}
-alert(currentValues);
-} 
-
-
-
-
-
-function singleImageButton() {
-let random=Math.floor(Math.random()*images.length);
-return random;
-}
-
-function chooseNums() {
- 
-
-}
-
-
-function showImage() {
-    
-
-}
-
-function compareImages() {
-  
-}
-
-function newCredits() {
-
-}
-
-function showMessage() {
-
-}
-
-function closingButton(){
-
-}
-
-function playAudio(){
-
-}

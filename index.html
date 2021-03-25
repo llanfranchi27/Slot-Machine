@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,60 +8,50 @@
     <title>Slot Machine</title>
     <link type="text/css" href="style.css" rel="stylesheet">
 </head>
+
 <body>
-        <header>
-            <div id="main-content">
-                <div id="credits">Credits</div>
-                <div id="total-credits"></div>
-                <div id="dollar">$</div>
+    <header>
+        <div id="main-content">
+            
+        <button id="spin">Spin</button>
+
+        <div id="title">Slot Machine</div>
+
+    </header>
+
+    <section id="windows">
+        <div class="window">
+            <div class="image">
+                <img id="left-image" src="imgs/coin2.png">
             </div>
-            <div id="coins">
 
-            </div>
-            <div id="spin">Spin</div>
-
-            <div id="title">Casino Royale</div>
-
-        </header>
+        </div>
 
         <section id="windows">
             <div class="window">
                 <div class="image">
-                    <img src="imgs/coin2.png">
+                    <img id="middle-image" src="imgs/coin2.png">
                 </div>
-                <div class="button">Click</div>
+        </section>
+        </div>
+
+        <section id="windows">
+            <div class="window">
+                <div class="image">
+                    <img id="right-image" src="imgs/coin2.png">
+                </div>
 
             </div>
 
-            <section id="windows">
-            <div class="window">
-                <div class="image">
-                    <img src="imgs/coin2.png">
-                </div>
-                <!-- <div class="button">Click</div> -->
-                </section>
-        </div>
-
-            <section id="windows">
-            <div class="window">
-                <div class="image">
-                    <img src="imgs/coin2.png">
-                </div>
-                <div class="button">Click</div>
-                </div>
-
 
             </div>
-    </section>
+        </section>
 
-    <div id="prompt">
-        <div id="message-prompt">
-            <img id ="close-icon" src="imgs/button.png">
-            
-        </div>
-    </div>
-   <audio id="sonido" src=""></audio>
-    
-<script src="script.js"></script>
+      <div id="show-result">
+          
+      </div>
+
+        <script src="script.js"></script>
 </body>
+
 </html>
