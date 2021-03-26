@@ -1,6 +1,7 @@
 
 img{
-    max-width: 100%;
+    width: 130px;
+    height: 130px;
     vertical-align: top;
 }
 body{
@@ -20,12 +21,17 @@ body{
 
 }
 
+header{
+    height: 195px;
+    text-align: center;
+    align-items: center;
+}
 
 #title{
     text-align: center;
 
     align-items: center;
-    font-size: 50px;
+    font-size: 80px;
     color: white;
 }
 
@@ -48,11 +54,6 @@ body{
     margin:auto;
     top: 370px;
 
-}
-
-header{
-    position: relative;
-    height: 195px;
 }
 
  #windows{
@@ -96,4 +97,5 @@ header{
 
 #show-result{
     color: white;
+    background-color: black;
 }
