@@ -30,7 +30,6 @@ function getRandomImg() {
 }
 
 function spin() {
-
   leftImage.src = getRandomImg();
   middleImage.src = getRandomImg();
   rightImage.src = getRandomImg();
@@ -39,12 +38,9 @@ function spin() {
 
 function compareImage() {
   messageId.textContent = "";
-  if (leftImage.src === middleImage.src && middleImage.src === rightImage.src){
-      messageId.textContent = "You have won!";
+  if (leftImage.src === middleImage.src && middleImage.src === rightImage.src) {
+    messageId.textContent = "You have won!";
   } else {
     messageId.textContent = "You have lost!";
   }
-
 }
-
-
