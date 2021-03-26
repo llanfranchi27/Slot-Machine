@@ -23,15 +23,15 @@ spinButton.addEventListener("click", spin);
 
 // Functions
 
-function getRandomImg() {
+function getRandomIdx() {
   let randomIdx = Math.floor(Math.random() * images.length);
   return images[randomIdx];
 }
 
 function spin() {
-  leftImage.src = getRandomImg();
-  middleImage.src = getRandomImg();
-  rightImage.src = getRandomImg();
+  leftImage.src = getRandomIdx();
+  middleImage.src = getRandomIdx();
+  rightImage.src = getRandomIdx();
   compareImage();
 }
 
