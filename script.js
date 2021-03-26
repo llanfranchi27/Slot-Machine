@@ -1,14 +1,13 @@
 // Variables
 
 const images = [
-  "imgs/1.png",
-  "imgs/2.png",
-  "imgs/python-icon.png",
-  "imgs/ruby-icon.png",
-  "imgs/coin2.png",
+  "imgs/number7.jpeg",
+  "imgs/number2.jpeg",
+  "imgs/number5.jpeg",
+  "imgs/number22.jpeg",
+  "imgs/number25.png",
 ];
 
-const currentImages = [];
 
 // Element references
 
