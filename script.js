@@ -7,7 +7,7 @@ const images = [
   "imgs/ruby-icon.png",
   "imgs/coin2.png",
 ];
-// console.log(images);
+
 const currentImages = [];
 
 // Element references
@@ -26,7 +26,6 @@ spinButton.addEventListener("click", spin);
 
 function getRandomImg() {
   let randomIdx = Math.floor(Math.random() * images.length);
-  // console.log(randomIdx);
   return images[randomIdx];
 }
 
@@ -39,7 +38,6 @@ function spin() {
 }
 
 function compareImage() {
-  //Compare images if they're equal or different
   messageId.textContent = "";
   if (leftImage.src === middleImage.src && middleImage.src === rightImage.src){
       messageId.textContent = "You have won!";
